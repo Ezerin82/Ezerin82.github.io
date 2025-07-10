@@ -1,0 +1,139 @@
+body {
+    background-color: #1b1811;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b1811;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 75vw;
+    height: 80vh;
+    background-color: #feffec;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#left, #right {
+    width: 48%;
+    height: 100%;
+    padding: 20px 30px;
+    overflow-y: auto;
+}
+
+#left {
+    margin-left: 20px;
+}
+
+#Lcontent, #Rcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#Lcontent p, #Rcontent p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+input, select, textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 0.95em;
+}
+
+textarea {
+    resize: none;
+}
+
+#mid {
+    width: 2%;
+    background-color: #1b1811;
+}
+
+#bottom {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1b1811;
+    position: absolute;
+    top: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    width: 75%;
+    height: 75%;
+    background-color: #feffec;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+
+#historia {
+    width: 90%;
+    height: 50%;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+button {
+    background-color: #c8c9a3;   
+    color: #1b1811;             
+    border-radius: 20px;  
+    border: none;       
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(139, 145, 3, 0.3);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e0e1b8;   
+    box-shadow: 0 6px 12px rgba(139, 145, 3, 0.5);
+}
+
+
+
+
+#submit {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#reset {
+    margin-top: 10px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drip SMP - wiki</title>
+        <link rel="stylesheet" href="wikineo.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="head">
+                <div id="header">
+                    <div id="title"><p>Drip SMP - wiki</p></div>
+                    <div id="search">
+                        <div class="search-container">
+                            <label for="texter" class="search-icon">
+                                <img src="search.svg" alt="ops" id="search-img" />
+                            </label>
+                            <input type="text" id="texter" placeholder="Szukaj..." autocomplete="off" />
+                        </div>
+                    </div>
+                    <div id="nav">
+                        <ol id="lista">
+                            <li id="home">
+                                <a href="index.html"><img src="home.svg" alt="" />strona główna</a>
+                            </li>
+                            <li id="login">
+                                <a href="login.html"><img src="login.svg" alt="" />login</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="mini-header">
+                    <ul id="mini-lista">
+                        <li id="mapa">Mapa</li>
+                        <li id="lokacje">Lokacje</li>
+                        <li id="czas">Czas</li>
+                        <li id="panstwa">Państwa</li>
+                        <li id="fakcje">Fakcje</li>
+                        <li id="rasy">Rasy</li>
+                        <li id="przedmioty">Przedmioty</li>
+                        <li id="postacie"><a href="postacie.html">Postacie</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+                <div id="center">
+                    <div id="postac">
+                        <div id="PO-header">
+                            <p></p>
+                        </div>
+
+                        <div id="PO-content">
+                            <div id="PO-left" class="card">
+                                <h2>Informacje ogólne</h2>
+                                <p><span class="label">Pełna nazwa:</span> <span id="PelnaNazwa"></span></p>
+                                <p><span class="label">Pseudonimy:</span> <span id="Pseudonimy"></span></p>
+                                <p><span class="label">Płeć:</span> <span id="Plec"></span></p>
+                                <p><span class="label">Rasa:</span> <span id="Rasa"></span></p>
+                                <p><span class="label">Wiek:</span> <span id="Wiek"></span></p>
+                                <p><span class="label">Ranga:</span> <span id="Ranga"></span></p>
+                                <p><span class="label">Klasa:</span> <span id="Klasa"></span></p>
+                                <p><span class="label">Narodowość:</span> <span id="Narodowosc"></span></p>
+                                <p><span class="label">Fakcje:</span> <span id="Fakcje"></span></p>
+                                <p><span class="label">Wiara:</span> <span id="Wiara"></span></p>
+                                <p><span class="label">Miejsce urodzenia:</span> <span id="MiejsceUrodzenia"></span></p>
+                                <p><span class="label">Data urodzenia:</span> <span id="DataUrodzenia"></span></p>
+                                <p><span class="label">Miejsce śmierci:</span> <span id="MiejsceSmierci"></span></p>
+                                <p><span class="label">Data śmierci:</span> <span id="DataSmierci"></span></p>
+                            </div>
+
+                            <div id="PO-right" class="card">
+                                <h2>Wygląd fizyczny</h2>
+                                <p><span class="label">Wzrost:</span> <span id="Wzrost"></span></p>
+                                <p><span class="label">Waga:</span> <span id="Waga"></span></p>
+                                <p><span class="label">Kolor skóry:</span> <span id="KolorSkory"></span></p>
+                                <p><span class="label">Rodzaj włosów:</span> <span id="RodzajWlosow"></span></p>
+                                <p><span class="label">Kolor włosów:</span> <span id="KolorWlosow"></span></p>
+                                <p><span class="label">Kolor oczu:</span> <span id="KolorOczu"></span></p>
+                                <p><span class="label">Blizny:</span> <span id="Blizny"></span></p>
+                                <p><span class="label">Cechy szczególne:</span> <span id="CechySzczegolne"></span></p>
+                            </div>
+
+                            <div id="PO-stat" class="card">
+                                <h2>Statystyki</h2>
+                                <div id="stats-container"></div>
+                            </div>
+                        </div>
+                        <div id="PO-bottom">
+                            <div id="PO-hist" class="card">
+                                <h2>Historia</h2>
+                                <p style="margin-top: 7.5%" id="Historia"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+        <script src="wikineo.js"></script>
+    </body>
+</html>

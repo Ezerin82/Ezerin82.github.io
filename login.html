@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip SMP - login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box">
+            <h2>Logowanie</h2>
+            <div class="input-group">
+                <label for="login"><img src="person.svg" alt="Person icon"></label>
+                <input type="text" id="login" autocomplete="off" placeholder="Login">
+            </div>
+            <div class="input-group">
+                <label for="haslo"><img src="password.svg" alt="Password icon"></label>
+                <input type="password" id="haslo" autocomplete="off" placeholder="Hasło">
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-password">
+                <label for="show-password">Pokaż hasło</label>
+            </div>
+            <div id="zlogin">zły login</div>
+            <div id="zhaslo">złe hasło</div>
+            <button id="zaloguj">Zaloguj</button>
+            <a href="#">Zapomniałeś hasła?</a>
+        </div>
+    </div>
+    <script src="js-login.js"></script>
+</body>
+</html>

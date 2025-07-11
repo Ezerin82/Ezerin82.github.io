@@ -279,7 +279,6 @@ body {
     color: #e4b113;
     border-bottom: 2px solid #444;
     padding-bottom: 0.5rem;
-    position: absolute;
     display: flex;
     justify-content: flex-start;
     width: 95.5%;
@@ -310,7 +309,6 @@ body {
 #PO-right p {
     margin-top: 0.35rem;
 }
-
 
 #Historia {
     margin-top: 7.5%;
@@ -351,7 +349,6 @@ body {
     #mini-header {
         min-height: 7vh;
         padding: 0.5rem;
-        
     }
     #mini-lista {
         gap: 1rem;
@@ -371,26 +368,22 @@ body {
         gap: 1rem;
         align-items: center;
     }
-    #PO-left, #PO-right, #PO-stat {
+    #PO-left,
+    #PO-right,
+    #PO-stat {
         width: 100%;
         min-width: auto;
     }
+
     #PO-hist h2 {
-        font-size: 3vw;
+        font-size: 2rem;
     }
+
     .card p {
         font-size: 1.5rem;
     }
     .card h2 {
         font-size: 2rem;
-    }
-    #Historia {
-        font-size: 2rem;
-        margin-top: 10%;
-    }
-
-    #PO-hist h2{
-        width: 90%;
     }
 }
 
@@ -407,7 +400,8 @@ body {
         transform: none;
         width: 100%;
     }
-    #nav, #lista {
+    #nav,
+    #lista {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
@@ -443,7 +437,9 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    #PO-left, #PO-right, #PO-stat {
+    #PO-left,
+    #PO-right,
+    #PO-stat {
         width: 90%;
     }
     #PO-stat {
@@ -456,19 +452,14 @@ body {
         font-size: 5vw;
         border-bottom-width: 3px;
     }
-    #Historia {
-        font-size: 2.5vw;
-        margin-top: 15%;
-    }
     #PO-hist h2 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
 
 /* Małe smartfony */
 @media (max-width: 480px) {
-
-    #search{
+    #search {
         width: 95%;
     }
     #title p {
@@ -486,6 +477,9 @@ body {
         font-size: 3vw;
     }
     .card h2 {
+        font-size: 6vw;
+    }
+    #PO-hist h2 {
         font-size: 6vw;
     }
 }

@@ -6,7 +6,7 @@ fetch('dane.json')
     return response.json();
   })
   .then(data => {
-    const postacie = data.postacie;
+    const postacie = data.Postacie;
 
     // 1. Sortuj alfabetycznie po imieniu
     postacie.sort((a, b) => {

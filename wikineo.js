@@ -105,7 +105,7 @@ function PobierzInfo() {
             fetch('dane.json')
                 .then((res) => res.json())
                 .then((data) => {
-                    const postacie = data.postacie;
+                    const postacie = data.Postacie;
                     const postac = postacie.find((p) => p.PodstawoweInfo.Imie === imie);
 
                     if (postac) {

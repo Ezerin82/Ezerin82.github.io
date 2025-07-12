@@ -10,8 +10,12 @@ function drawRadarChart(container, stats) {
     container.innerHTML = '';
     const svgNS = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(svgNS, 'svg');
-    svg.setAttribute('width', width);
-    svg.setAttribute('height', height);
+    svg.setAttribute('class', 'poligon');
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    svg.style.width = '100%';
+    svg.style.height = 'auto';
+
     container.appendChild(svg);
 
     // Podziałki
@@ -49,10 +53,10 @@ function drawRadarChart(container, stats) {
 
         const label = document.createElementNS(svgNS, 'text');
         label.textContent = stat.name;
-        const offset = 20;
+        const offset = 22;
         label.setAttribute('x', x + offset * Math.cos(angle));
         label.setAttribute('y', y + offset * Math.sin(angle));
-        label.setAttribute('font-size', '12');
+        label.setAttribute('font-size', '18');
         label.setAttribute('fill', '#eee');
         label.setAttribute('text-anchor', 'middle');
         label.setAttribute('dominant-baseline', 'middle');
@@ -70,6 +74,7 @@ function drawRadarChart(container, stats) {
         points.push(`${x},${y}`);
 
         const circle = document.createElementNS(svgNS, 'circle');
+
         circle.setAttribute('cx', x);
         circle.setAttribute('cy', y);
         circle.setAttribute('r', 4);
@@ -78,6 +83,7 @@ function drawRadarChart(container, stats) {
     });
 
     const dataPolygon = document.createElementNS(svgNS, 'polygon');
+
     dataPolygon.setAttribute('points', points.join(' '));
     dataPolygon.setAttribute('fill', 'rgba(228, 177, 19, 0.5)');
     dataPolygon.setAttribute('stroke', '#e4b113');

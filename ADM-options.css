@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #1e1f1c;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
@@ -10,7 +10,7 @@ body{
     text-decoration: none;
 }
 
-#wrapper{
+#wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body{
     align-items: center;
 }
 
-#card{
+#card {
     width: 25vw;
     height: 75vh;
     background-color: #d5b790;
@@ -33,7 +33,7 @@ body{
     gap: 5%;
 }
 
-#header{
+#header {
     width: 100%;
     height: 15%;
     display: flex;
@@ -42,7 +42,7 @@ body{
     background-color: #c79e69;
 }
 
-#main{
+#main {
     width: 100%;
     height: 85%;
     display: flex;
@@ -50,6 +50,51 @@ body{
     align-items: top;
 }
 
-ol > li>a:hover{
+ol > li > a:hover {
     filter: drop-shadow(2px 2px 0px #111121);
+    text-decoration: underline;
+}
+
+/* =============================================
+   RESPONSYWNOŚĆ
+============================================= */
+
+/* Duże tablety i mniejsze laptopy */
+@media (max-width: 1024px) {
+    #card {
+        width: 75%;
+        min-height: 80vh;
+    }
+
+    #header {
+        min-height: 100px;
+    }
+
+    #header > p {
+        font-size: 10vw;
+    }
+
+    #main {
+        min-height: 300px;
+        font-size: 8vw;
+    }
+}
+
+/* Tablety i duże smartfony */
+@media (max-width: 768px) {
+    #card {
+        width: 90%;
+        min-height: 90vh;
+    }
+}
+
+/* Małe smartfony */
+@media (max-width: 480px) {
+    #wrapper {
+        overflow: hidden;
+    }
+
+    #card {
+        min-height: 50vh;
+    }
 }

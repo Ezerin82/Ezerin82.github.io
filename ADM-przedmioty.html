@@ -1,128 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DripSMP - ADM przedmioty</title>
+        <link rel="stylesheet" href="ADM-przedmioty.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DripSMP - ADM przedmioty</title>
-    <link rel="stylesheet" href="ADM-przedmioty.css">
-</head>
+    <body>
+        <div id="wrapper">
+            <div id="card">
+                <div id="left">
+                    <div id="Lcontent">
+                        <p>Podstawowe informacje</p>
+                        <label for="nazwa">Nazwa:</label>
+                        <input type="text" id="nazwa" />
 
-<body>
-    <div id="wrapper">
-        <div id="card">
-            <div id="left">
-                <div id="Lcontent">
-                    <p>Podstawowe informacje</p>
-                    <label for="imie">Imię:</label>
-                    <input type="text" id="imie" placeholder="Imię - Tytuł - Nazwisko - Przydomek">
+                        <label for="owner">Właściciel:</label>
+                        <input type="text" id="owner" />
 
-                    <label for="potocznie">Potocznie:</label>
-                    <input type="text" id="potocznie">
+                        <label for="typ">Typ:</label>
+                        <input type="text" id="typ" />
 
-                    <label for="rasa">Rasa:</label>
-                    <input type="text" id="rasa">
-
-                    <label for="plec">Płeć:</label>
-                    <select id="plec">
-                        <option value="mężczyzna">Mężczyzna</option>
-                        <option value="kobieta">Kobieta</option>
-                    </select>
-
-                    <label for="wiek">Wiek:</label>
-                    <input type="number" id="wiek" min="1">
-
-                    <label for="klasa">Klasa:</label>
-                    <input type="text" id="klasa"
-                        placeholder="rozdzielaj wiele klas przecinkiem np: &lt;słowo&gt; , &lt;słowo&gt; , &lt;słowo&gt;">
-
-                    <label for="pseudonimy">Pseudonimy:</label>
-                    <input type="text" id="pseudonimy"
-                        placeholder="rozdzielaj przecinkiem np: &lt;słowo&gt; , &lt;słowo&gt;">
-
-                    <label for="fakcje">Fakcje:</label>
-                    <input type="text" id="fakcje" placeholder="rozdzielaj przecinkiem np: &lt;słowo&gt; , &lt;słowo&gt; , &lt;słowo&gt;">
-
-                    <label for="ranga">Ranga:</label>
-                    <input type="text" id="ranga">
-
-                    <label for="narodowosc">Narodowość:</label>
-                    <input type="text" id="narodowosc">
-
-                    <label for="wiara">Wiara:</label>
-                    <input type="text" id="wiara">
-
-                    <label for="data_urodzenia">Data urodzenia:</label>
-                    <input type="text" id="data_urodzenia">
-
-                    <label for="miejsce_urodzenia">Miejsce urodzenia:</label>
-                    <input type="text" id="miejsce_urodzenia">
-
-                    <label for="data_smierci">Data śmierci:</label>
-                    <input type="text" id="data_smierci">
-
-                    <label for="miejsce_smierci">Miejsce śmierci:</label>
-                    <input type="text" id="miejsce_smierci">
+                        <label for="waga">Waga:</label>
+                        <input type="number" id="waga" min="0" />
+                    </div>
                 </div>
-            </div>
-            <div id="mid"></div>
-            <div id="right">
-                <div id="Rcontent">
-                    <p>Informacje o ciele</p>
+                <div id="mid"></div>
+                <div id="right">
+                    <div id="Rcontent">
+                        <p>Opis</p>
 
-                    <label for="wzrost">Wzrost (m): </label>
-                    <input type="number" id="wzrost" min="0">
+                        <textarea id="opis" rows="15"></textarea>
 
-                    <label for="waga">Waga (kg):</label>
-                    <input type="number" id="waga" min="0">
-
-                    <label for="kolor_skory">Kolor skóry:</label>
-                    <input type="text" id="kolor_skory">
-
-                    <label for="rodzaj_wlosow">Rodzaj włosów:</label>
-                    <input type="text" id="rodzaj_wlosow">
-
-                    <label for="kolor_wlosow">Kolor włosów:</label>
-                    <input type="text" id="kolor_wlosow">
-
-                    <label for="kolor_oczu">Kolor oczu:</label>
-                    <input type="text" id="kolor_oczu">
-
-                    <label for="blizny">Blizny:</label>
-                    <input type="text" id="blizny">
-
-                    <label for="cechy">Cechy szczególne:</label>
-                    <textarea id="cechy" style="resize: none;" rows="4"></textarea>
-
-                    <label for="sila">Siła:</label>
-                    <input type="number" id="sila" min="0" max="10">
-
-                    <label for="zrecznosc">Zwinność:</label>
-                    <input type="number" id="zrecznosc" min="0" max="10">
-
-                    <label for="kondycja">Kondycja:</label>
-                    <input type="number" id="kondycja" min="0" max="10">
-
-                    <label for="zdrowie">Zdrowie:</label>
-                    <input type="number" id="zdrowie" min="0" max="10">
-
-                    <label for="energia">Energia:</label>
-                    <input type="number" id="energia" min="0" max="10">
-
-                    <label for="uroda">Uroda:</label>
-                    <input type="number" id="uroda" min="0" max="10">
+                        <div id="box">
+                            <button id="submit">Potwierdź</button>
+                            <button id="reset">Zresetuj</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="bottom">
-        <div id="box">
-            <label for="historia" style="margin-top: 2.5%;">Historia</label>
-            <textarea id="historia"></textarea>
-            <button id="submit">Potwierdź</button>
-            <button id="reset">Zresetuj</button>
-        </div>
-    </div>
-    <script src="ADM-postacie.js"></script>
-</body>
+
+        <script src="ADM-przedmioty.js"></script>
+    </body>
 </html>

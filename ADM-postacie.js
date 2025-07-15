@@ -37,7 +37,7 @@ submit.addEventListener('click', (e) => {
         { id: 'energia', name: 'Energia' },
         { id: 'uroda', name: 'Uroda' },
 
-        { id: 'historia', name: 'Historia' }
+        { id: 'historia', name: 'Historia' },
     ];
 
     let emptyFields = [];
@@ -116,7 +116,7 @@ submit.addEventListener('click', (e) => {
         .map((s) => s.trim())
         .filter((s) => s !== '');
 
-    let postac = {
+    let Postac = {
         PodstawoweInfo: {
             Imie: document.querySelector('#imie').value,
             PelnaNazwa: document.querySelector('#pelna_nazwa').value,
@@ -153,7 +153,7 @@ submit.addEventListener('click', (e) => {
         Historia: document.querySelector('#historia').value,
     };
 
-    const jsonData = JSON.stringify(postac, null, 2);
+    const jsonData = JSON.stringify(Postac, null, 2);
     const blob = new Blob(['\uFEFF' + jsonData], { type: 'application/json;charset=utf-8' });
     const url = URL.createObjectURL(blob);
 
@@ -170,7 +170,6 @@ submit.addEventListener('click', (e) => {
 
     URL.revokeObjectURL(url);
 });
-
 
 let reset = document.querySelector('#reset');
 

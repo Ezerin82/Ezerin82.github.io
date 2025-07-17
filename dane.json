@@ -7,9 +7,21 @@
                 "Rasa": "Shenzai",
                 "Plec": "Mężczyzna",
                 "Wiek": "82lat",
-                "Klasa": ["Przywódca", "Skrytobójca", "Wojownik", "Szermierz", "Strateg"],
-                "Pseudonimy": ["Śnieżne Ostrze", "Biały Wilk Zachodu"],
-                "Fakcje": ["Klan Yunai", "Cesarstwo Sumari"],
+                "Klasa": [
+                    "Przywódca",
+                    "Skrytobójca",
+                    "Wojownik",
+                    "Szermierz",
+                    "Strateg"
+                ],
+                "Pseudonimy": [
+                    "Śnieżne Ostrze",
+                    "Biały Wilk Zachodu"
+                ],
+                "Fakcje": [
+                    "Klan Yunai",
+                    "Cesarstwo Sumari"
+                ],
                 "Ranga": "Lider, Cesarz",
                 "Narodowosc": "Klan Yunai",
                 "Wiara": "Brak",
@@ -35,22 +47,61 @@
                 "Uroda": "4"
             },
             "Historia": "N/A"
+        },
+        {
+            "PodstawoweInfo": {
+                "Imie": "Ireneus",
+                "PelnaNazwa": "Ireneus Haraine",
+                "Rasa": "Ren",
+                "Plec": "Mężczyzna",
+                "Wiek": "162",
+                "Klasa": [
+                    "Szermierz",
+                    "Kowal",
+                    "Strateg",
+                    "Wynalazca"
+                ],
+                "Pseudonimy": [
+                    "Błękitne Ostrze"
+                ],
+                "Fakcje": [
+                    "Nadrenia",
+                    "Zakon Kunrai"
+                ],
+                "Ranga": "Lider",
+                "Narodowosc": "Nadreńczyk",
+                "Wiara": "N/A",
+                "DataUrodzenia": "5E 1411r",
+                "MiejsceUrodzenia": "Podgórze Eleńskie",
+                "DataSmierci": "6E 1r",
+                "MiejsceSmierci": "Zakon Kunrai"
+            },
+            "InfoOCiele": {
+                "Wzrost": "1.92",
+                "Waga": "87",
+                "KolorSkory": "Blady biały ",
+                "RodzajWlosow": "Długie, Proste ",
+                "KolorWlosow": "Srebrny",
+                "KolorOczu": "Błękitne ",
+                "Blizny": "Mniejsze blizny na plecach i rękach",
+                "CechySzczegolne": "Wysoka inteligencja, Skrytość",
+                "Sila": "7",
+                "Zwinnosc": "8",
+                "Kondycja": "7",
+                "Zdrowie": "9",
+                "Energia": "8",
+                "Uroda": "7"
+            },
+            "Historia": "N/A"
         }
     ],
     "Przedmioty": [
         {
-            "Nazwa": "Nazwa1",
-            "Owner": "Dziad1",
-            "Typ": "Normalny1",
-            "Waga": "5",
-            "Opis": "jest małym nudnym Nazwa1"
-        },
-        {
-            "Nazwa": "Nazwa2",
-            "Owner": "Dziad2",
-            "Typ": "Normalny2",
-            "Waga": "15",
-            "Opis": "jest małym nudnym Nazwa2"
+            "Nazwa":"Nazwa2",
+            "Owner":"Dziad2",
+            "Typ":"Normalny2",
+            "Waga":"15",
+            "Opis":"jest małym nudnym Nazwa2"
         }
     ]
 }

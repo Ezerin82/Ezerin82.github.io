@@ -15,7 +15,7 @@ body {
 #wrapper {
     width: 100%;
     min-height: 100vh;
-    background: url("background-login.jpg");
+    background: url('background-login.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -98,7 +98,6 @@ button:hover {
     background-color: #d32f2f; /* ciemniejszy czerwony */
 }
 
-
 a {
     margin-top: 0.5rem;
     color: #ddd;
@@ -110,7 +109,7 @@ a:hover {
     color: white;
 }
 
-#zlogin{
+#zlogin {
     position: absolute;
     left: 9%;
     top: 22.5%;
@@ -120,7 +119,7 @@ a:hover {
     display: none;
 }
 
-#zhaslo{
+#zhaslo {
     position: absolute;
     left: 9%;
     top: 39%;

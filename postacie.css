@@ -14,6 +14,7 @@ body {
 #wrapper {
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #header {
@@ -160,11 +161,7 @@ body {
     color: #ffffff;
 }
 
-#head {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+
 
 #main {
     height: auto;

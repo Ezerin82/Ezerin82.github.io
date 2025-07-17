@@ -90,10 +90,6 @@ ol > li > a:hover {
 
 /* Małe smartfony */
 @media (max-width: 480px) {
-    #wrapper {
-        overflow: hidden;
-    }
-
     #card {
         min-height: 50vh;
     }

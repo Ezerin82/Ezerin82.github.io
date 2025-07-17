@@ -128,8 +128,8 @@ function PobierzInfo() {
                         document.querySelector('#DataSmierci').innerHTML += postac.PodstawoweInfo.DataSmierci;
 
                         // ------------------- InfoOCiele -------------------
-                        document.querySelector('#Wzrost').innerHTML += postac.InfoOCiele.Wzrost + 'm';
-                        document.querySelector('#Waga').innerHTML += postac.InfoOCiele.Waga + 'kg';
+                        document.querySelector('#Wzrost').innerHTML += postac.InfoOCiele.Wzrost + ' m';
+                        document.querySelector('#Waga').innerHTML += postac.InfoOCiele.Waga + ' kg';
                         document.querySelector('#KolorSkory').innerHTML += postac.InfoOCiele.KolorSkory;
                         document.querySelector('#RodzajWlosow').innerHTML += postac.InfoOCiele.RodzajWlosow;
                         document.querySelector('#KolorWlosow').innerHTML += postac.InfoOCiele.KolorWlosow;
@@ -153,11 +153,37 @@ function PobierzInfo() {
                         console.warn('Nie znaleziono postaci o imieniu:', imie);
                     }
                 });
+            break;
 
+        case 'przedmiot':
+            document.querySelector('#Przedmioty').style.display = `flex`;
+            const nazwa = params.get('nazwa');
+
+            console.log('Kliknięto przedmiot:', nazwa);
+
+            fetch('dane.json')
+                .then((res) => res.json())
+                .then((data) => {
+                    const przedmioty = data.Przedmioty;
+                    const przedmiot = przedmioty.find((p) => p.Nazwa === nazwa);
+
+                    if (przedmiot) {
+                        console.log('Dane przedmiotu:', przedmiot);
+                        document.querySelector('#PR-header p').innerHTML += przedmiot.Nazwa;
+                        document.querySelector('#PRNazwa').innerHTML += przedmiot.Nazwa;
+                        document.querySelector('#PROwner').innerHTML += przedmiot.Owner;
+                        document.querySelector('#PRTyp').innerHTML += przedmiot.Typ;
+                        document.querySelector('#PRwaga').innerHTML += przedmiot.Waga + ' kg';
+
+                        document.querySelector("#PR-opis p").innerHTML += przedmiot.Opis;
+                    } else {
+                        console.warn('Nie znaleziono postaci o nazwie:', nazwa);
+                    }
+                });
             break;
 
         default:
-            console.log('niedziala');
+            alert('niedziala');
     }
 }
 

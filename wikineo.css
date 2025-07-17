@@ -196,6 +196,50 @@ body {
     position: relative;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =============================================
    POSTAĆ — SEKCJA I KARTY INFORMACYJNE
 ============================================= */
@@ -310,6 +354,94 @@ body {
 #PO-right p {
     margin-top: 0.35rem;
 }
+
+/* =============================================
+   PRZEDMIOTY
+============================================= */
+
+#Przedmioty {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #ccc;
+    overflow: hidden;
+}
+
+#PR-header {
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #e4b113;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e4b113;
+    padding-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+
+#PR-box{
+    width: 100%;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#PR-info{
+    width: 30%;
+    min-height: 20vh;
+    height: min-content;
+}
+
+#PR-opis{
+    min-height: 20vh;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

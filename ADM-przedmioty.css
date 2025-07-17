@@ -80,7 +80,6 @@ textarea {
     background-color: #1b1811;
 }
 
-
 button {
     background-color: #c8c9a3;
     color: #1b1811;
@@ -101,15 +100,90 @@ button:hover {
     box-shadow: 0 6px 12px rgba(139, 145, 3, 0.5);
 }
 
-#submit,#reset {
-    width: 25%;
+#submit,
+#reset {
+    width: 10rem;
     margin-top: 3%;
 }
 
-#box{
+#box {
     margin-top: 10%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* TABLETY (768px - 1024px) */
+@media (max-width: 1024px) {
+    #card {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        border-radius: 40px 40px 0 0;
+    }
+
+    #left,
+    #right {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    #mid {
+        display: none;
+    }
+
+    #box {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    #submit,
+    #reset {
+        width: 45%;
+        margin-top: 0;
+    }
+
+    #opis {
+        height: 200px;
+    }
+}
+
+/* TELEFONY (do 767px) */
+@media (max-width: 767px) {
+    #card {
+        width: 95vw;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.9em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    #box {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    #submit,
+    #reset {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #opis {
+        height: 180px;
+        font-size: 1em;
+    }
 }

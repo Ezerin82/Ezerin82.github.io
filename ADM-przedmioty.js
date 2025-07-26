@@ -37,7 +37,7 @@ submit.addEventListener('click', (e) => {
 
     let Przedmiot = {
         Nazwa: document.querySelector('#nazwa').value,
-        Właściciel: document.querySelector('#owner').value,
+        Owner: document.querySelector('#owner').value,
         Typ: document.querySelector('#typ').value,
         Waga: document.querySelector('#waga').value,
         Opis: document.querySelector('#opis').value,

@@ -355,6 +355,35 @@ body {
     margin-top: 0.35rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =============================================
    PRZEDMIOTY
 ============================================= */
@@ -390,6 +419,7 @@ body {
     flex-direction: row;
     gap: 1.5rem;
 }
+
 
 #PR-info{
     width: 30%;
@@ -430,21 +460,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =============================================
    RESPONSYWNOŚĆ
 ============================================= */
@@ -452,39 +467,38 @@ body {
 /* Duże tablety i mniejsze laptopy */
 @media (max-width: 1024px) {
     #header {
+        min-height: 25vh;
+        display: flex;
         flex-direction: column;
-        min-height: auto;
-        padding: 1rem;
+        align-items: center;
     }
+
     #title p {
-        font-size: 5vw;
-        margin-bottom: 0.5rem;
+        font-size: 7vw;
+        font-weight: 900;
     }
+
     #search {
         width: 100%;
-        margin-bottom: 1rem;
     }
+
     #nav {
-        margin-bottom: 1rem;
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 1rem;
+        margin-bottom: 4%;
     }
-    #lista {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
+
+    #mini-lista,
     #mini-header {
-        min-height: 7vh;
-        padding: 0.5rem;
-    }
-    #mini-lista {
-        gap: 1rem;
-        justify-content: center;
         flex-wrap: wrap;
+        min-height: 12.5vh;
+    }
+
+    #mini-lista li {
+        transform: scale(1.2);
+    }
+
+    #mini-lista li:hover {
+        background-color: #1f1f1f;
+        color: #ffffff;
     }
     #center {
         width: 90%;
@@ -520,14 +534,10 @@ body {
 
 /* Tablety i duże smartfony */
 @media (max-width: 768px) {
-    #header {
-        padding: 1rem 0.5rem;
-    }
     #title p {
         font-size: 6vw;
     }
     #search {
-        /* usunięcie !important, niepotrzebne */
         transform: none;
         width: 100%;
     }
@@ -538,14 +548,11 @@ body {
         gap: 1rem;
     }
     #mini-lista li {
-        padding: 8px 12px;
         font-size: 1.2rem;
-        /* usunięcie !important, niepotrzebne */
         transform: none;
     }
     #mini-header {
         min-height: auto;
-        padding: 1rem 0.5rem;
     }
     #center {
         width: 95%;
@@ -591,26 +598,119 @@ body {
 /* Małe smartfony */
 @media (max-width: 480px) {
     #search {
-        width: 95%;
+        width: 100%;
     }
     #title p {
         font-size: 9vw;
     }
     #lista li a {
-        padding: 0.3rem 0.5rem;
         font-size: 0.8rem;
     }
-    #mini-lista li {
-        padding: 6px 8px;
-        font-size: 1rem;
-    }
     .card p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .card h2 {
         font-size: 6vw;
     }
     #PO-hist h2 {
+        font-size: 6vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Duże tablety i mniejsze laptopy */
+@media (max-width: 1024px) {
+    #PR-header {
+        font-size: 4vw;
+        border-bottom-width: 3px;
+    }
+
+    #PR-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #PR-info,
+    #PR-opis {
+        width: 100%;
+    }
+
+    .card#PR-info p,
+    .card#PR-opis p {
+        font-size: 1.5rem;
+    }
+
+    .card#PR-info h2,
+    .card#PR-opis h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablety i większe smartfony */
+@media (max-width: 768px) {
+    #PR-header {
+        font-size: 6vw;
+        border-bottom-width: 4px;
+        text-align: center;
+    }
+
+    #PR-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #PR-info,
+    #PR-opis {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .card#PR-info p,
+    .card#PR-opis p {
+        font-size: 2.5vw;
+    }
+
+    .card#PR-info h2,
+    .card#PR-opis h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Małe smartfony */
+@media (max-width: 480px) {
+    #PR-header {
+        font-size: 7vw;
+        border-bottom-width: 5px;
+    }
+
+    #PR-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #PR-info,
+    #PR-opis {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .card#PR-info p,
+    .card#PR-opis p {
+        font-size: 4vw;
+    }
+
+    .card#PR-info h2,
+    .card#PR-opis h2 {
         font-size: 6vw;
     }
 }

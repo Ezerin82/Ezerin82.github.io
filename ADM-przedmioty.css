@@ -100,11 +100,15 @@ button:hover {
     box-shadow: 0 6px 12px rgba(139, 145, 3, 0.5);
 }
 
-#submit,
-#reset {
-    width: 10rem;
-    margin-top: 3%;
+#submit {
+    margin-top: 20px;
+    margin-right: 10px;
 }
+
+#reset {
+    margin-top: 10px;
+}
+
 
 #box {
     margin-top: 10%;
@@ -174,12 +178,13 @@ button:hover {
         align-items: stretch;
         gap: 10px;
         margin-top: 15px;
+        min-height: 110px;
     }
 
     #submit,
     #reset {
         width: 100%;
-        margin-top: 0;
+        margin: 0px;
     }
 
     #opis {

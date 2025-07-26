@@ -301,4 +301,12 @@ body {
         font-size: 9vw;
         font-weight: 900;
     }
+
+    #title{
+        min-height: 15vh;
+    }
+
+    #search{
+        min-height: 10vh;
+    }
 }

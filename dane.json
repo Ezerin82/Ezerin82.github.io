@@ -7,21 +7,9 @@
                 "Rasa": "Shenzai",
                 "Plec": "Mężczyzna",
                 "Wiek": "82lat",
-                "Klasa": [
-                    "Przywódca",
-                    "Skrytobójca",
-                    "Wojownik",
-                    "Szermierz",
-                    "Strateg"
-                ],
-                "Pseudonimy": [
-                    "Śnieżne Ostrze",
-                    "Biały Wilk Zachodu"
-                ],
-                "Fakcje": [
-                    "Klan Yunai",
-                    "Cesarstwo Sumari"
-                ],
+                "Klasa": ["Przywódca", "Skrytobójca", "Wojownik", "Szermierz", "Strateg"],
+                "Pseudonimy": ["Śnieżne Ostrze", "Biały Wilk Zachodu"],
+                "Fakcje": ["Klan Yunai", "Cesarstwo Sumari"],
                 "Ranga": "Lider, Cesarz",
                 "Narodowosc": "Klan Yunai",
                 "Wiara": "Brak",
@@ -55,19 +43,9 @@
                 "Rasa": "Ren",
                 "Plec": "Mężczyzna",
                 "Wiek": "162",
-                "Klasa": [
-                    "Szermierz",
-                    "Kowal",
-                    "Strateg",
-                    "Wynalazca"
-                ],
-                "Pseudonimy": [
-                    "Błękitne Ostrze"
-                ],
-                "Fakcje": [
-                    "Nadrenia",
-                    "Zakon Kunrai"
-                ],
+                "Klasa": ["Szermierz", "Kowal", "Strateg", "Wynalazca"],
+                "Pseudonimy": ["Błękitne Ostrze"],
+                "Fakcje": ["Nadrenia", "Zakon Kunrai"],
                 "Ranga": "Lider",
                 "Narodowosc": "Nadreńczyk",
                 "Wiara": "N/A",

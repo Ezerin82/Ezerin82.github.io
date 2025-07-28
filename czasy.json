@@ -1,0 +1,134 @@
+{
+    "czas": {
+        "E1": {
+            "776": [
+                {
+                    "wydarzenie": "Pierwsze igrzyska olimpijskie",
+                    "opis": "Zorganizowane w Olimpii ku czci Zeusa."
+                }
+            ],
+            "753": [
+                {
+                    "wydarzenie": "Założenie Rzymu",
+                    "opis": "Legenda mówi, że Romulus założył Rzym 21 kwietnia 753 roku p.n.e."
+                }
+            ],
+            "509": [
+                {
+                    "wydarzenie": "Początek republiki rzymskiej",
+                    "opis": "Rzymianie obalili monarchię i utworzyli republikę."
+                },
+                {
+                    "wydarzenie": "Ucieczka Tarkwiniusza Pysznego",
+                    "opis": "Ostatni król Rzymu został wygnany po zamieszkach społecznych."
+                }
+            ]
+        },
+        "E2": {
+            "476": [
+                {
+                    "wydarzenie": "Upadek Cesarstwa Zachodniorzymskiego",
+                    "opis": "Odoaker obalił Romulusa Augustulusa - koniec starożytności."
+                }
+            ],
+            "966": [
+                {
+                    "wydarzenie": "Chrzest Polski",
+                    "opis": "Mieszko I przyjął chrzest, włączając państwo do chrześcijańskiej Europy."
+                }
+            ],
+            "1066": [
+                {
+                    "wydarzenie": "Bitwa pod Hastings",
+                    "opis": "Wilhelm Zdobywca pokonał Harolda II i został królem Anglii."
+                },
+                {
+                    "wydarzenie": "Śmierć Edwarda Wyznawcy",
+                    "opis": "Śmierć króla Anglii wywołała spór o tron."
+                }
+            ]
+        },
+        "E3": {
+            "1453": [
+                {
+                    "wydarzenie": "Zdobycie Konstantynopola",
+                    "opis": "Imperium Osmańskie zdobyło miasto, kończąc istnienie Cesarstwa Bizantyjskiego."
+                }
+            ],
+            "1492": [
+                {
+                    "wydarzenie": "Odkrycie Ameryki",
+                    "opis": "Kolumb dotarł do wysp archipelagu Bahamów."
+                },
+                {
+                    "wydarzenie": "Wygnanie Żydów z Hiszpanii",
+                    "opis": "Dekret Alhambry zmusił Żydów do opuszczenia Hiszpanii."
+                }
+            ],
+            "1452": [
+                {
+                    "wydarzenie": "Odkrycie Ameryki",
+                    "opis": "Kolumb dotarł do wysp archipelagu Bahamów."
+                },
+                {
+                    "wydarzenie": "Wygnanie Żydów z Hiszpanii",
+                    "opis": "Dekret Alhambry zmusił Żydów do opuszczenia Hiszpanii."
+                }
+            ],
+            "1517": [
+                {
+                    "wydarzenie": "Tezy Lutra",
+                    "opis": "95 tez ogłoszonych w Wittenberdze rozpoczęło reformację."
+                }
+            ]
+        },
+        "E4": {
+            "1776": [
+                {
+                    "wydarzenie": "Deklaracja niepodległości USA",
+                    "opis": "13 kolonii ogłosiło niepodległość od Wielkiej Brytanii."
+                },
+                {
+                    "wydarzenie": "Bitwa pod Trenton",
+                    "opis": "George Washington zwyciężył siły Hesów podczas wojny o niepodległość."
+                }
+            ],
+            "1789": [
+                {
+                    "wydarzenie": "Zburzenie Bastylii",
+                    "opis": "Symboliczny początek rewolucji francuskiej."
+                }
+            ],
+            "1791": [
+                {
+                    "wydarzenie": "Konstytucja 3 maja",
+                    "opis": "Pierwsza konstytucja w Europie, druga na świecie."
+                }
+            ]
+        },
+        "E5": {
+            "1939": [
+                {
+                    "wydarzenie": "Atak Niemiec na Polskę",
+                    "opis": "1 września rozpoczęła się II wojna światowa."
+                },
+                {
+                    "wydarzenie": "Agresja ZSRR na Polskę",
+                    "opis": "17 września Związek Radziecki wkroczył na wschodnie ziemie Polski."
+                }
+            ],
+            "1969": [
+                {
+                    "wydarzenie": "Lądowanie na Księżycu",
+                    "opis": "Neil Armstrong jako pierwszy człowiek postawił stopę na Księżycu."
+                }
+            ],
+            "1989": [
+                {
+                    "wydarzenie": "Upadek Muru Berlińskiego",
+                    "opis": "Rozpad bloku wschodniego rozpoczął się w Niemczech."
+                }
+            ]
+        }
+    }
+}

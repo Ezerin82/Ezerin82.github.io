@@ -266,7 +266,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 #ul-lata li:hover {

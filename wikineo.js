@@ -102,7 +102,7 @@ function PobierzInfo() {
 
             console.log('Kliknięto postać:', imie);
 
-            fetch('dane.json')
+            fetch('postacie.json')
                 .then((res) => res.json())
                 .then((data) => {
                     const postacie = data.Postacie;
@@ -161,7 +161,7 @@ function PobierzInfo() {
 
             console.log('Kliknięto przedmiot:', nazwa);
 
-            fetch('dane.json')
+            fetch('przedmioty.json')
                 .then((res) => res.json())
                 .then((data) => {
                     const przedmioty = data.Przedmioty;

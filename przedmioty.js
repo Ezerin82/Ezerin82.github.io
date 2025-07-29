@@ -1,4 +1,4 @@
-fetch('dane.json')
+fetch('przedmioty.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Błąd sieci: ' + response.status);

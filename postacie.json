@@ -1,0 +1,76 @@
+{
+    "Postacie": [
+        {
+            "PodstawoweInfo": {
+                "Imie": "Erevan",
+                "PelnaNazwa": "Erevan Yunai",
+                "Rasa": "Shenzai",
+                "Plec": "Mężczyzna",
+                "Wiek": "82lat",
+                "Klasa": ["Przywódca", "Skrytobójca", "Wojownik", "Szermierz", "Strateg"],
+                "Pseudonimy": ["Śnieżne Ostrze", "Biały Wilk Zachodu"],
+                "Fakcje": ["Klan Yunai", "Cesarstwo Sumari"],
+                "Ranga": "Lider, Cesarz",
+                "Narodowosc": "Klan Yunai",
+                "Wiara": "Brak",
+                "DataUrodzenia": "N/A",
+                "MiejsceUrodzenia": "Zamek Tarodyun, Klan Yunai",
+                "DataSmierci": "N/A",
+                "MiejsceSmierci": "N/A"
+            },
+            "InfoOCiele": {
+                "Wzrost": "1.93",
+                "Waga": "98",
+                "KolorSkory": "Blady Biały",
+                "RodzajWlosow": "Długie, Proste",
+                "KolorWlosow": "Czarne",
+                "KolorOczu": "Czerwone",
+                "Blizny": "Liczne blizny po cięciach i dźgnięciach na całym ciele, blizna na twarzy oślepiająca na jedno oko",
+                "CechySzczegolne": "Sporadyczny niedowład prawej ręki, nadzwyczajna tolerancja na ból, żyły powiększone wysokim ciśnieniem, ataki paniki, ataki gniewu, zwidy i halucynacje, każdej nocy przeżywa koszmary, nigdy nie rozstaje się ze swoim mieczem",
+                "Sila": "9",
+                "Zwinnosc": "9",
+                "Kondycja": "10",
+                "Zdrowie": "7",
+                "Energia": "8",
+                "Uroda": "4"
+            },
+            "Historia": "N/A"
+        },
+        {
+            "PodstawoweInfo": {
+                "Imie": "Ireneus",
+                "PelnaNazwa": "Ireneus Haraine",
+                "Rasa": "Ren",
+                "Plec": "Mężczyzna",
+                "Wiek": "162",
+                "Klasa": ["Szermierz", "Kowal", "Strateg", "Wynalazca"],
+                "Pseudonimy": ["Błękitne Ostrze"],
+                "Fakcje": ["Nadrenia", "Zakon Kunrai"],
+                "Ranga": "Lider",
+                "Narodowosc": "Nadreńczyk",
+                "Wiara": "N/A",
+                "DataUrodzenia": "5E 1411r",
+                "MiejsceUrodzenia": "Podgórze Eleńskie",
+                "DataSmierci": "6E 1r",
+                "MiejsceSmierci": "Zakon Kunrai"
+            },
+            "InfoOCiele": {
+                "Wzrost": "1.92",
+                "Waga": "87",
+                "KolorSkory": "Blady biały ",
+                "RodzajWlosow": "Długie, Proste ",
+                "KolorWlosow": "Srebrny",
+                "KolorOczu": "Błękitne ",
+                "Blizny": "Mniejsze blizny na plecach i rękach",
+                "CechySzczegolne": "Wysoka inteligencja, Skrytość",
+                "Sila": "7",
+                "Zwinnosc": "8",
+                "Kondycja": "7",
+                "Zdrowie": "9",
+                "Energia": "8",
+                "Uroda": "7"
+            },
+            "Historia": "N/A"
+        }
+    ]
+}

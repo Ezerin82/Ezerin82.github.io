@@ -7,10 +7,14 @@ fetch('czasy.json')
         return res.json();
     })
     .then((data) => {
-        // Wczytujemy wszystkie wydarzenia do jednej tablicy
         for (let era in data.czas) {
-            for (let rok in data.czas[era]) {
-                data.czas[era][rok].forEach((item) => {
+            const entries = data.czas[era];
+
+            entries.forEach((entry) => {
+                const rok = Object.keys(entry)[0];
+                const wydarzenia = entry[rok];
+
+                wydarzenia.forEach((item) => {
                     wszystkieWydarzenia.push({
                         era,
                         rok: Number(rok),
@@ -18,21 +22,18 @@ fetch('czasy.json')
                         opis: item.opis,
                     });
                 });
-            }
+            });
         }
 
-        // Sortujemy wydarzenia - specjalnie dla E1 lata malejąco, reszta rosnąco
         wszystkieWydarzenia.sort((a, b) => {
             if (a.rok !== b.rok) return a.rok - b.rok;
             return a.nazwa.localeCompare(b.nazwa);
         });
 
-        // Dodajemy kliknięcia na ery
         document.querySelectorAll('.era').forEach((el) => {
             el.addEventListener('click', () => {
                 wybranaEra = el.dataset.era;
 
-                // Ustawiamy aktywną klasę
                 document.querySelectorAll('.era').forEach((e) => e.classList.remove('active'));
                 el.classList.add('active');
 
@@ -41,7 +42,6 @@ fetch('czasy.json')
             });
         });
 
-        // Domyślnie klikamy w pierwszą erę
         const pierwszaEra = document.querySelector('.era');
         if (pierwszaEra) pierwszaEra.click();
     })
@@ -53,9 +53,8 @@ function pokazLata(era) {
     const ul = document.getElementById('ul-lata');
     ul.innerHTML = '';
 
-    // Zbieramy unikalne lata danej ery i sortujemy
     const lataSet = new Set(wszystkieWydarzenia.filter((e) => e.era === era).map((e) => e.rok));
-    const lata = Array.from(lataSet);
+    const lata = Array.from(lataSet).sort((a, b) => a - b);
 
     lata.forEach((rok) => {
         const li = document.createElement('li');
@@ -66,7 +65,6 @@ function pokazLata(era) {
         li.addEventListener('click', () => {
             pokazWydarzenia(era, rok);
 
-            // Podświetlamy wybrany rok
             ul.querySelectorAll('li').forEach((e) => e.classList.remove('selected'));
             li.classList.add('selected');
         });

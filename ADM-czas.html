@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DripSMP - ADM Czas</title>
+        <link rel="stylesheet" href="ADM-czas.css" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="card">
+                <div id="center">
+                    <div id="content">
+                        <p>Podstawowe informacje</p>
+                        <label for="era">Era:</label>
+                        <select id="era">
+                            <option value="E1">Era I</option>
+                            <option value="E2">Era II</option>
+                            <option value="E3">Era III</option>
+                            <option value="E4">Era IV</option>
+                            <option value="E5">Era V</option>
+                            <option value="E6">Era VI</option>
+                        </select>
+
+                        <label for="rok">Rok:</label>
+                        <input type="number" id="rok" min="0"/>
+
+                        <label for="event">Wydarzenie:</label>
+                        <input type="text" id="event" />
+
+                        <label for="opis">Opis:</label>
+                        <textarea id="opis" rows="5"></textarea>
+
+                        <div id="box">
+                            <button id="add">Dodaj Wydarzenie</button>
+                            <button id="submit">Potwierdź</button>
+                            <button id="reset">Zresetuj</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="ADM-czas.js"></script>
+    </body>
+</html>

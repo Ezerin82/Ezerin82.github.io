@@ -1,0 +1,154 @@
+body {
+    background-color: #1b1811;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b1811;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 90vw;
+    max-width: 700px;
+    min-height: 80vh;
+    background-color: #feffec;
+    border-radius: 40px 40px 0 0;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#content p {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+input,
+select,
+textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 0.95em;
+}
+
+#box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+button {
+    background-color: #c8c9a3;
+    color: #1b1811;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(139, 145, 3, 0.3);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e0e1b8;
+    box-shadow: 0 6px 12px rgba(139, 145, 3, 0.5);
+}
+
+textarea {
+    resize: none;
+    font-size: 1.1em;
+}
+
+#submit {
+    margin-right: 10px;
+}
+
+#reset {
+    margin-bottom: 10px;
+}
+
+/* TABLETY (768px - 1024px) */
+@media (max-width: 1024px) {
+    #card {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        border-radius: 40px 40px 0 0;
+    }
+
+    #box {
+        width: 90%;
+        height: auto;
+        border-radius: 0 0 30px 30px;
+    }
+
+}
+
+/* TELEFONY (do 767px) */
+@media (max-width: 767px) {
+    #card {
+        width: 95vw;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.9em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #box {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #box {
+        width: 95%;
+    }
+}

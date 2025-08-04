@@ -101,3 +101,20 @@ function pokazWydarzenia(era, rok) {
         container.appendChild(div);
     });
 }
+
+function updateEraText() {
+    const eraTexts = ["I", "II", "III", "IV", "V"];
+    const fullTexts = ["Era I", "Era II", "Era III", "Era IV", "Era V"];
+    const isSmallScreen = window.innerWidth <= 992;
+
+    for (let i = 1; i <= eraTexts.length; i++) {
+        const el = document.getElementById(`E${i}`);
+        if (!el) continue;
+
+        el.textContent = isSmallScreen ? eraTexts[i - 1] : fullTexts[i - 1];
+    }
+}
+
+// wywołaj na starcie i przy zmianie rozmiaru
+window.addEventListener("load", updateEraText);
+window.addEventListener("resize", updateEraText);

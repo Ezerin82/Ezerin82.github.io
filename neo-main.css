@@ -1,14 +1,14 @@
-body {
-    background-color: #161616;
-    color: white;
-}
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     color: currentColor;
     text-decoration: none;
+}
+
+body {
+    background-color: #161616;
+    color: white;
 }
 
 #wrapper {
@@ -22,7 +22,7 @@ body {
     min-height: 10vh;
     display: flex;
     flex-direction: row;
-    background-color: #121212; /* ciemny header */
+    background-color: #121212;
 }
 
 #title {
@@ -50,7 +50,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    background-color: #f0f0f0; /* biały search box */
+    background-color: #f0f0f0;
     border-radius: 25px;
     padding: 0.5rem 1rem;
     width: 100%;
@@ -59,6 +59,11 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: all linear 0.2s;
     margin: 0.5rem;
+}
+
+.search-container:hover {
+    border: solid 3px #4b4b4b;
+    box-shadow: 0px 0px 5px #4b4b4b;
 }
 
 .search-icon img {
@@ -84,11 +89,6 @@ body {
     color: #999;
 }
 
-.search-container:hover {
-    border: solid 3px #4b4b4b;
-    box-shadow: 0px 0px 5px #4b4b4b;
-}
-
 #nav {
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ body {
     align-items: center;
     gap: 4px;
     padding: 0.4rem 0.8rem;
-    background-color: #f0f0f0; /* białe przyciski */
+    background-color: #f0f0f0;
     border-radius: 12px;
     color: #333;
     font-size: 0.9rem;
@@ -132,7 +132,7 @@ body {
 #mini-header {
     width: 100%;
     min-height: 5vh;
-    background-color: #1f1f1f; /* jaśniejszy od headera */
+    background-color: #1f1f1f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +148,7 @@ body {
 
 #mini-lista li {
     margin: 0 10px;
-    padding: 0; /* padding przenosimy do <a> */
+    padding: 0;
 }
 
 #mini-lista li a {
@@ -182,170 +182,40 @@ body {
     min-height: 200px;
     background-color: #1a1a1a;
     padding: 1rem;
-    /* padding-top: 0; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: row;
-}
-
-#ery-lista {
-    width: 12.5%;
-    min-height: 100%;
-    border-right: #cccccc solid 0.25rem;
-    /* background-color: #332535; */
-    display: flex;
-    flex-direction: column;
-}
-
-.era {
-    width: 100%;
-    min-height: 5vh;
-    display: grid;
-    place-items: center;
-    transition: all ease 0.5s;
-}
-
-.era p {
-    width: 75%;
-    height: 90%;
-    display: grid;
-    place-items: center;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    font-weight: 750;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-
-    transition: all ease 0.5s;
-}
-
-.era p:hover {
-    filter: drop-shadow(0px 0px 3px #eee);
-}
-
-.era.active {
-    filter: drop-shadow(0px 0px 3px #eee);
-}
-
-#brdr {
-    width: 2%;
-    min-height: 100%;
-    border-right: #cccccc solid 0.25rem;
-}
-
-#lata-box {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#lata-lista {
-    width: 20%;
-    min-height: 100%;
-}
-
-#ul-lata {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    overflow-x: hidden;
-}
-
-#ul-lata li {
-    margin-left: 2%;
-    margin-bottom: 0.5rem;
-    padding-left: 2%;
-    padding-right: 1%;
-    width: auto;
-    min-height: 5%;
-    height: 5vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s ease;
 }
 
-#ul-lata li:hover {
-    filter: drop-shadow(0px 0px 3px #666);
-}
-
-#ul-lata li::after {
-    content: '';
-    width: 1vw;
-    height: 0.25rem;
-    background-color: #cccccc;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-95%, -50%);
-}
-
-.rok {
-    width: 7%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: #666;
-    font-size: 1.25rem;
+.card {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
     line-height: 1.6;
-    letter-spacing: 1px;
-    font-weight: 750;
+    position: relative;
     font-family: 'Roboto', sans-serif;
 }
 
-#wydarzenia-box {
-    width: 75%;
-    border-left: 1px white dashed;
-    padding-left: 5%;
-}
-
-#wydarzenia-box h1 {
-    font-size: 2.5rem;
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
     color: #e4b113;
-    margin-bottom: 2%;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
-#wydarzenia-content {
-    font-size: 1.25rem;
+.label {
+    font-weight: 600;
+    color: #666;
+    margin-right: 0.5rem;
 }
 
-.selected {
-    filter: drop-shadow(0px 0px 3px #666);
-}
-
-@media (max-width: 992px) and (min-width: 769px) {
-    #header {
-        min-height: 25vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #title p {
-        font-size: 7vw;
-        font-weight: 900;
-    }
-
-    #search {
-        width: 100%;
-    }
-
-    #nav {
-        margin-bottom: 2%;
-    }
-
-    #center {
-        width: 75%;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #header {
         min-height: 25vh;
         display: flex;
@@ -380,15 +250,70 @@ body {
         background-color: #1f1f1f;
         color: #ffffff;
     }
-
     #center {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+    .card h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #title p {
+        font-size: 6vw;
+    }
+    #search {
+        transform: none;
         width: 100%;
+    }
+    #nav,
+    #lista {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #mini-lista li {
+        font-size: 1.2rem;
+        transform: none;
+    }
+    #mini-header {
+        min-height: auto;
+    }
+    #center {
+        width: 95%;
+        padding: 1rem;
+    }
+    .card p {
+        font-size: 2.5vw;
+    }
+    .card h2 {
+        font-size: 5vw;
+        border-bottom-width: 3px;
     }
 }
 
 @media (max-width: 480px) {
+    #search {
+        width: 100%;
+    }
     #title p {
         font-size: 9vw;
-        font-weight: 900;
+    }
+    #lista li a {
+        font-size: 0.8rem;
+    }
+    .card p {
+        font-size: 4vw;
+    }
+    .card h2 {
+        font-size: 6vw;
     }
 }
+
+
+

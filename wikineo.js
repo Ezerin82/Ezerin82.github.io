@@ -98,7 +98,7 @@ function PobierzInfo() {
     switch (typ) {
         case 'postac':
             document.querySelector('#postac').style.display = `flex`;
-            const imie = params.get('imie');
+            let imie = params.get('imie');
 
             console.log('Kliknięto postać:', imie);
 
@@ -157,7 +157,7 @@ function PobierzInfo() {
 
         case 'przedmiot':
             document.querySelector('#Przedmioty').style.display = `flex`;
-            const nazwa = params.get('nazwa');
+            let nazwa = params.get('nazwa');
 
             console.log('Kliknięto przedmiot:', nazwa);
 
@@ -175,9 +175,42 @@ function PobierzInfo() {
                         document.querySelector('#PRTyp').innerHTML += przedmiot.Typ;
                         document.querySelector('#PRwaga').innerHTML += przedmiot.Waga + ' kg';
 
-                        document.querySelector("#PR-opis p").innerHTML += przedmiot.Opis;
+                        document.querySelector('#PR-opis p').innerHTML += przedmiot.Opis;
                     } else {
-                        console.warn('Nie znaleziono postaci o nazwie:', nazwa);
+                        console.warn('Nie znaleziono przedmiotu o nazwie:', nazwa);
+                    }
+                });
+            break;
+
+        case 'panstwo':
+            document.querySelector('#Panstwa').style.display = `flex`;
+            let nazwaPN = params.get('nazwa');
+
+            console.log('Kliknięto państwo:', nazwaPN);
+
+            fetch('panstwa.json')
+                .then((res) => res.json())
+                .then((data) => {
+                    const panstwa = data.Panstwa;
+                    const panstwo = panstwa.find((p) => p.Nazwa === nazwaPN);
+
+                    if (panstwo) {
+                        console.log('Dane państwa:', panstwo);
+                        document.querySelector('#PN-header p').innerHTML += panstwo.Nazwa;
+                        document.querySelector('#PNNazwa').innerHTML += panstwo.Nazwa;
+                        document.querySelector('#PNUstroj').innerHTML += panstwo.Ustroj;
+                        document.querySelector('#PNStolica').innerHTML += panstwo.Stolica;
+                        document.querySelector('#PNLiczbaMieszkancow').innerHTML += panstwo.LiczbaMieszkancow;
+                        document.querySelector('#PNReligia').innerHTML += panstwo.DominujacaReligia;
+                        document.querySelector('#PNEtnicznosc').innerHTML += panstwo.DominujacaEtnicznosc;
+
+                        document.querySelector('#PN-opis p').innerHTML += panstwo.Opis;
+                        document.querySelector('#PN-historia p').innerHTML += panstwo.Historia;
+
+
+                        document.querySelector('#PR-opis p').innerHTML += panstwo.Opis;
+                    } else {
+                        console.warn('Nie znaleziono państwa o nazwie:', nazwaPN);
                     }
                 });
             break;
